@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: monospace;
+    background-color: whitesmoke;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 0rem;
+    
+}
+
+#hero{
+    position: relative;
+    padding: 0px 20px 0px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 20rem;
+}
+
+#ashu{
+    display: block;
+    position: relative;
+    text-align: right;
+    
+    padding-bottom: 10%;
+
+    width: 100%;
+
+}
+
+#sunuwar{
+    display: block;
+    position: relative;
+    text-align: left;
+
+    
+    padding-top: 10%;
+
+    width: 100%;
+}
+
+#hero p{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#main-nav ul{
+    list-style-type: none;
+    text-align: end;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashu Sunuwar</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="date">
+            <span id="day">00</span>
+            <span>/</span>
+            <span id="month">00</span>
+            <span>/</span>
+            <span id="year">00</span>
+        </div>
+
+        <p>Based in Basingstoke, UK</p>
+
+        <div class="clock">
+            <span id="hrs">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1> <span id="ashu">Ashu</span> <span id="sunuwar">Sunuwar</span></h1>
+            <p>An aspiring developer building his portfolio</p>
+            <nav id="main-nav">
+                <ul>
+                    <li>About Me</li>
+                    <li>My Projects</li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+
+        let hrs = document.getElementById("hrs");
+        let min = document.getElementById("min");
+        let sec = document.getElementById("sec");
+
+        let day = document.getElementById("day");
+        let month = document.getElementById("month");
+        let year = document.getElementById("year");
+
+        setInterval(() => {        
+            let currentTime = new Date();
+
+            console.log(currentTime);
+
+            hrs.innerHTML = currentTime.getHours();
+            min.innerHTML = currentTime.getMinutes();
+            sec.innerHTML = currentTime.getSeconds();
+
+            day.innerHTML = currentTime.getDate();
+            month.innerHTML = currentTime.getMonth() + 1;
+            year.innerHTML = currentTime.getFullYear();
+        },1000)
+
+    </script>
+
+</body>
+</html>
